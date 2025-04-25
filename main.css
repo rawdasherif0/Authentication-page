@@ -5,9 +5,11 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
+
 body {
     background-color: #f4f4f8;
 }
+
 .main {
     width: 100%;
     max-width: 400px;
@@ -18,12 +20,14 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
 .main h2 {
     margin-bottom: 20px;
     font-size: 26px;
-    color:#4e342e;
+    color: #222222;
     font-family: 'Georgia', serif;
 }
+
 .main label {
     display: block;
     text-align: left;
@@ -32,6 +36,7 @@ body {
     color: #333333;
     font-size: 14px;
 }
+
 .main input {
     width: 100%;
     padding: 12px;
@@ -42,11 +47,13 @@ body {
     background-color: #fffaf7e0;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 .main input:focus {
     border-color:#0d1d33;
     box-shadow: 0 0 4px rgba(75, 0, 130, 0.3);
     outline: none;
 }
+
 .main input[type="submit"] {
     background-color:#0d1d33;
     color: #ffffff;
@@ -58,21 +65,25 @@ body {
     font-size: 15px;
     transition: background-color 0.3s ease;
 }
+
 .main input[type="submit"]:hover {
     background-color: #060e18;
 }
+
 .login-link {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
     color:#444;
 }
+
 .login-link a {
     color: #0d1d33;
     font-weight: bold;
     text-decoration: none;
     transition: text-decoration 0.2s ease;
 }
+
 .login-link a:hover {
     text-decoration: underline;
 }
