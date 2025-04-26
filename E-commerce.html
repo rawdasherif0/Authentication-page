@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- saved from url=(0112)file:///C:/Users/DELL/AppData/Local/Temp/Rar$EXa14384.45804.rartemp/e-commerce-project-main/e-commerce/home.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <!-- Changed from "Document" to more descriptive title -->
+    <link rel="stylesheet" href="./E-commerce_files/homecss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./E-commerce_files/css2" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo-box">
+          <div class="circler"></div>
+          <div class="logo">
+            <a href="file:///C:/Users/DELL/AppData/Local/Temp/Rar$EXa14384.45804.rartemp/e-commerce-project-main/e-commerce/home.html#">
+              <img class="logo-img" src="./E-commerce_files/logo.png" alt="store Logo">
+            </a>
+          </div>
+        </div>
+
+        <nav class="navigation">
+          <ul class="nav-links">
+            <li><a href="file:///C:/Users/DELL/AppData/Local/Temp/Rar$EXa14384.45804.rartemp/e-commerce-project-main/e-commerce/home.html#">Home</a></li>
+            <li><a href="file:///C:/Users/DELL/AppData/Local/Temp/Rar$EXa14384.45804.rartemp/e-commerce-project-main/e-commerce/home.html#">Menu</a></li>
+            <li><a href="file:///C:/Users/DELL/AppData/Local/Temp/Rar$EXa14384.45804.rartemp/e-commerce-project-main/e-commerce/home.html#">Contact us</a></li>
+            <li><a href="file:///C:/Users/DELL/AppData/Local/Temp/Rar$EXa14384.45804.rartemp/e-commerce-project-main/e-commerce/home.html#">Our story</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- all home page content  -->
+      <div class="center">
+        <!--  box contain content in middle  -->
+        <div class="page">
+          <!-- white sheet that contain the content   -->
+          <main class="main-content">
+            <!--  home section  -->
+            <img class="main-image" src="./E-commerce_files/firstpic.png" alt=" store">
+            <!--  first pic  -->
+            <div class="content-wrapper">
+              <!--  box  slides and text  -->
+              <!-- Text Header Section -->
+              <div class="text-header">
+                <!--  text beside slides  -->
+                <h1>Welcome to Our Store</h1>
+                <p class="subtitle">Experience culinary excellence</p>
+                <p class="description">
+                  Discover our carefully crafted menu featuring the finest
+                  ingredients and authentic flavors that will transport your
+                  senses.
+                </p>
+                <button class="cta-button">View Our Menu</button>
+              </div>
+              <!-- Slider Section -->
+              <div class="slider-container">
+                <!-- slides content  -->
+                <div class="slideshow">
+                  <div class="slide" style="display: none;">
+                    <img src="./E-commerce_files/pexels-anthony-macajone-1782407.jpg" alt="Restaurant image 1">
+                  </div>
+                  <div class="slide" style="display: block;">
+                    <img src="./E-commerce_files/pexels-cottonbro-studio-8721318.jpg" alt="Restaurant image 2">
+                  </div>
+                  <div class="slide" style="display: none;">
+                    <img src="./E-commerce_files/pexels-bao-dang-3700369.jpg" alt="Restaurant image 3">
+                  </div>
+
+                  <a class="prev" onclick="plusSlides(-1)">❮</a>
+                  <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+
+                <div class="dots-container">
+                  <!-- Slides dots -->
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot active" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                <!-- Slides dots -->
+              </div>
+            </div>
+          </main>
+          <!--   end home section  -->
+          <script>
+            /* animation in the slides JS*/
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides((slideIndex += n));
+            }
+
+            function currentSlide(n) {
+              showSlides((slideIndex = n));
+            }
+
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("slide");
+              let dots = document.getElementsByClassName("dot");
+
+              if (n > slides.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = slides.length;
+              }
+
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+
+              // Auto-advance slides every 5 seconds
+              setTimeout(() => {
+                plusSlides(1);
+              }, 70000);
+            }
+          </script>
+
+          <div class="section-2">
+            <img class="img1-sec2" src="file:///C:/pictures/second%20img.png" alt=" store">
+            <!--  first pic  -->
+            <span class="quote-text">"More than just a place to enjoy fine coffee and Nuts. It's a
+              place where Mazaj lifted"</span>
+          </div>
+        </div>
+        <!--End of page  -->
+      </div>
+      <!-- End of the content in middle  -->
+    </main>
+    <!-- END  home page content  -->
+  
+
+</body></html>
