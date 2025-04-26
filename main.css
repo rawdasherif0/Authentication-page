@@ -87,3 +87,22 @@ body {
 .login-link a:hover {
     text-decoration: underline;
 }
+
+#error {
+    color: #e74c3c;
+    background-color: #fdecea; 
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+.error {
+    color: #e74c3c;
+    background-color: #fdecea; 
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  
